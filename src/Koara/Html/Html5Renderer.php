@@ -24,6 +24,12 @@ class Html5Renderer implements Renderer
      * @var int[]
      */
     private $listSequence = [];
+    
+    /**
+     * 
+     * @var bool
+     */
+    private $partial = true;
 
     public function visitDocument($node)
     {
@@ -212,7 +218,21 @@ class Html5Renderer implements Renderer
 
     public function getOutput()
     {
+    	if(!$this->partial) {
+     		$wrapper = "<!DOCTYPE html>\n";
+     		$wrapper .= "<html>\n";
+     		$wrapper .= "  <body>\n";
+     		$wrapper .= preg_replace("/^/", "    ", trim($this->out)) ."\n";
+     		$wrapper .= "  </body>\n";
+    		$wrapper .= "</html>\n";
+    		return $wrapper;
+    	}
         return trim($this->out);
+    }
+    
+    public function setPartial($partial)
+    {
+    	$this->partial = $partial;
     }
     
 }
