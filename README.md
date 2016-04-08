@@ -5,8 +5,40 @@
 [![Latest Version](https://img.shields.io/packagist/v/koara/koara-html.svg)](https://packagist.org/packages/koara/koara-html)
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://github.com/koara/koara-php-html/blob/master/LICENSE)
 
+# Koara-php-html
+[Koara](http://www.koara.io) is a modular lightweight markup language. This project can render the koara AST to Html in php.  
+The AST is created by the [core koara parser](https://github.com/koara/koara-php).
+
+## Getting started
+- Download [ZIP file]()
+- Composer
+
+  ``` bash
+  $ composer require koara/koara-html
+  ```
+
+## Usage
+```php
+<?php 
+
+require_once __DIR__ . '/vendor/autoload.php';
+	
+use Koara\Parser;
+use Koara\Html\Html5Renderer;
+
+$parser = new Parser();
+$result = $parser->parse("Hello World!"); 
+$renderer = new Html5Renderer();
+$result->accept($renderer);
+echo $renderer->getOutput();
+
+?>
+```
+
 ## Configuration
-### Parser
-### Renderer
-- `setPartial`: 
-  When false, the output will wrap the content to make a complete HTML document. (default: true) 
+You can configure the Renderer:
+
+-  **$renderer.setPartial(boolean partial)**  
+   Default:	`true`
+   
+   When false, the output will be wrapped with a `<html>` and `<body>` tag to make a complete Html document.
