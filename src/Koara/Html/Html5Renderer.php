@@ -38,7 +38,8 @@ class Html5Renderer implements Renderer
 
     public function visitHeading($node)
     {
-        $this->out .= $this->indent().'<h'.$node->getValue().'>';
+    	$this->indent();
+        $this->out .= '<h'.$node->getValue().'>';
         $node->childrenAccept($this);
         $this->out .= '</h'.$node->getValue().">\n";
         if (!$node->isNested()) {
@@ -48,14 +49,16 @@ class Html5Renderer implements Renderer
 
     public function visitBlockQuote($node)
     {
-        $this->out .= $this->indent().'<blockquote>';
+    	$this->indent();
+        $this->out .= '<blockquote>';
         if ($node->getChildren() != null && sizeof($node->getChildren()) > 0) {
             $this->out .= "\n";
         }
         ++$this->level;
         $node->childrenAccept($this);
         --$this->level;
-        $this->out .= $this->indent()."</blockquote>\n";
+        $this->indent();
+        $this->out .= "</blockquote>\n";
         if (!$node->isNested()) {
             $this->out .= "\n";
         }
@@ -65,11 +68,13 @@ class Html5Renderer implements Renderer
     {
         $this->listSequence[] = 0;
         $tag = $node->isOrdered() ? 'ol' : 'ul';
-        $this->out .= $this->indent().'<'.$tag.">\n";
+        $this->indent();
+        $this->out .= '<'.$tag.">\n";
         ++$this->level;
         $node->childrenAccept($this);
         --$this->level;
-        $this->out .= $this->indent().'</'.$tag.">\n";
+        $this->indent();
+        $this->out .= '</'.$tag.">\n";
         if (!$node->isNested()) {
             $this->out .= "\n";
         }
@@ -80,7 +85,8 @@ class Html5Renderer implements Renderer
     {
         $seq = end($this->listSequence) + 1;
         $this->listSequence[count($this->listSequence) - 1] = $seq;
-        $this->out .= $this->indent().'<li';
+        $this->indent();
+        $this->out .= '<li';
         if ($node->getNumber() != null && ($seq != $node->getNumber())) {
             $this->out .= ' value="'.$node->getNumber().'"';
             $this->listSequence[] = $node->getNumber();
@@ -95,7 +101,7 @@ class Html5Renderer implements Renderer
             $node->childrenAccept($this);
             --$this->level;
             if (sizeof($node->getChildren()) > 1 || !$block) {
-                $this->out .= $this->indent();
+                $this->indent();
             }
         }
         $this->out .= "</li>\n";
@@ -103,7 +109,8 @@ class Html5Renderer implements Renderer
 
     public function visitCodeBlock($node)
     {
-        $this->out .= $this->indent().'<pre><code';
+    	$this->indent();
+        $this->out .= '<pre><code';
         if ($node->getLanguage() != null) {
             $this->out .= ' class="language-'.$this->escape($node->getLanguage()).'"';
         }
@@ -119,7 +126,8 @@ class Html5Renderer implements Renderer
         if ($node->isNested() && ($node->getParent() instanceof ListItem) && $node->isSingleChild()) {
             $node->childrenAccept($this);
         } else {
-            $this->out .= $this->indent().'<p>';
+        	$this->indent();
+            $this->out .= '<p>';
             $node->childrenAccept($this);
             $this->out .= "</p>\n";
             if (!$node->isNested()) {
@@ -133,7 +141,7 @@ class Html5Renderer implements Renderer
         if ($node->isNested() && ($node->getParent() instanceof ListItem) && $node->isSingleChild()) {
             $node->childrenAccept($this);
         } else {
-            $this->out .= $this->indent();
+            $this->indent();
             $node->childrenAccept($this);
             if (!$node->isNested()) {
                 $this->out .= "\n";
@@ -192,7 +200,8 @@ class Html5Renderer implements Renderer
 
     public function visitLineBreak($node)
     {
-        $this->out .= "<br>\n".$this->indent();
+        $this->out .= "<br>\n";
+        $this->indent();
         $node->childrenAccept($this);
     }
 
@@ -207,13 +216,10 @@ class Html5Renderer implements Renderer
 
     public function indent()
     {
-        $buf = '';
         $repeat = $this->level * 2;
         for ($i = $repeat - 1; $i >= 0; --$i) {
-            $buf .= ' ';
+            $this->out .= ' ';
         }
-
-        return $buf;
     }
 
     public function getOutput()
