@@ -16,7 +16,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000003() {
-		$this->assertOutput("end2end-000003", Module::PARAGRAPHS, "headings" );
+		$this->assertOutput("end2end-000003","paragraphs", "headings" );
 	}
 	
 	public function testScenario000004() {
@@ -24,7 +24,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000005() {
-		$this->assertOutput("end2end-000005", Module::PARAGRAPHS, "lists" );
+		$this->assertOutput("end2end-000005","paragraphs", "lists" );
 	}
 	
 	public function testScenario000006() {
@@ -32,7 +32,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000007() {
-		$this->assertOutput("end2end-000007", Module::PARAGRAPHS, "headings", "lists" );
+		$this->assertOutput("end2end-000007","paragraphs", "headings", "lists" );
 	}
 	
 	public function testScenario000008() {
@@ -40,7 +40,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000009() {
-		$this->assertOutput("end2end-000009", Module::PARAGRAPHS, "links" );
+		$this->assertOutput("end2end-000009","paragraphs", "links" );
 	}
 	
 	public function testScenario000010() {
@@ -48,7 +48,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000011() {
-		$this->assertOutput("end2end-000011", Module::PARAGRAPHS, "headings", "links" );
+		$this->assertOutput("end2end-000011","paragraphs", "headings", "links" );
 	}
 	
 	public function testScenario000012() {
@@ -56,7 +56,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000013() {
-		$this->assertOutput("end2end-000013", Module::PARAGRAPHS, "lists", "links" );
+		$this->assertOutput("end2end-000013","paragraphs", "lists", "links" );
 	}
 	
 	public function testScenario000014() {
@@ -64,7 +64,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000015() {
-		$this->assertOutput("end2end-000015", Module::PARAGRAPHS, "headings", "lists", "links" );
+		$this->assertOutput("end2end-000015","paragraphs", "headings", "lists", "links" );
 	}
 	
 	public function testScenario000016() {
@@ -72,7 +72,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000017() {
-		$this->assertOutput("end2end-000017", Module::PARAGRAPHS, "images" );
+		$this->assertOutput("end2end-000017","paragraphs", "images" );
 	}
 	
 	public function testScenario000018() {
@@ -80,7 +80,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000019() {
-		$this->assertOutput("end2end-000019", Module::PARAGRAPHS, "headings", "images" );
+		$this->assertOutput("end2end-000019","paragraphs", "headings", "images" );
 	}
 	
 	public function testScenario000020() {
@@ -88,7 +88,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000021() {
-		$this->assertOutput("end2end-000021", Module::PARAGRAPHS, "lists", "images" );
+		$this->assertOutput("end2end-000021","paragraphs", "lists", "images" );
 	}
 	
 	public function testScenario000022() {
@@ -96,7 +96,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000023() {
-		$this->assertOutput("end2end-000023", Module::PARAGRAPHS, "headings", "lists", "images" );
+		$this->assertOutput("end2end-000023","paragraphs", "headings", "lists", "images" );
 	}
 	
 	public function testScenario000024() {
@@ -104,7 +104,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000025() {
-		$this->assertOutput("end2end-000025", Module::PARAGRAPHS, "links", "images" );
+		$this->assertOutput("end2end-000025","paragraphs", "links", "images" );
 	}
 	
 	public function testScenario000026() {
@@ -112,7 +112,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000027() {
-		$this->assertOutput("end2end-000027", Module::PARAGRAPHS, "headings", "links", "images" );
+		$this->assertOutput("end2end-000027","paragraphs", "headings", "links", "images" );
 	}
 	
 	public function testScenario000028() {
@@ -120,7 +120,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000029() {
-		$this->assertOutput("end2end-000029", Module::PARAGRAPHS, "lists", "links", "images" );
+		$this->assertOutput("end2end-000029","paragraphs", "lists", "links", "images" );
 	}
 	
 	public function testScenario000030() {
@@ -128,7 +128,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000031() {
-		$this->assertOutput("end2end-000031", Module::PARAGRAPHS, "headings", "lists", "links", "images" );
+		$this->assertOutput("end2end-000031","paragraphs", "headings", "lists", "links", "images" );
 	}
 	
 	public function testScenario000032() {
@@ -136,7 +136,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000033() {
-		$this->assertOutput("end2end-000033", Module::PARAGRAPHS, "formatting" );
+		$this->assertOutput("end2end-000033","paragraphs", "formatting" );
 	}
 	
 	public function testScenario000034() {
@@ -144,7 +144,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000035() {
-		$this->assertOutput("end2end-000035", Module::PARAGRAPHS, "headings", "formatting" );
+		$this->assertOutput("end2end-000035","paragraphs", "headings", "formatting" );
 	}
 	
 	public function testScenario000036() {
@@ -152,7 +152,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000037() {
-		$this->assertOutput("end2end-000037", Module::PARAGRAPHS, "lists", "formatting" );
+		$this->assertOutput("end2end-000037","paragraphs", "lists", "formatting" );
 	}
 	
 	public function testScenario000038() {
@@ -160,7 +160,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000039() {
-		$this->assertOutput("end2end-000039", Module::PARAGRAPHS, "headings", "lists", "formatting" );
+		$this->assertOutput("end2end-000039","paragraphs", "headings", "lists", "formatting" );
 	}
 	
 	public function testScenario000040() {
@@ -168,7 +168,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000041() {
-		$this->assertOutput("end2end-000041", Module::PARAGRAPHS, "links", "formatting" );
+		$this->assertOutput("end2end-000041","paragraphs", "links", "formatting" );
 	}
 	
 	public function testScenario000042() {
@@ -176,7 +176,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000043() {
-		$this->assertOutput("end2end-000043", Module::PARAGRAPHS, "headings", "links", "formatting" );
+		$this->assertOutput("end2end-000043","paragraphs", "headings", "links", "formatting" );
 	}
 	
 	public function testScenario000044() {
@@ -184,7 +184,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000045() {
-		$this->assertOutput("end2end-000045", Module::PARAGRAPHS, "lists", "links", "formatting" );
+		$this->assertOutput("end2end-000045","paragraphs", "lists", "links", "formatting" );
 	}
 	
 	public function testScenario000046() {
@@ -192,7 +192,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000047() {
-		$this->assertOutput("end2end-000047", Module::PARAGRAPHS, "headings", "lists", "links", "formatting" );
+		$this->assertOutput("end2end-000047","paragraphs", "headings", "lists", "links", "formatting" );
 	}
 	
 	public function testScenario000048() {
@@ -200,7 +200,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000049() {
-		$this->assertOutput("end2end-000049", Module::PARAGRAPHS, "images", "formatting" );
+		$this->assertOutput("end2end-000049","paragraphs", "images", "formatting" );
 	}
 	
 	public function testScenario000050() {
@@ -208,7 +208,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000051() {
-		$this->assertOutput("end2end-000051", Module::PARAGRAPHS, "headings", "images", "formatting" );
+		$this->assertOutput("end2end-000051","paragraphs", "headings", "images", "formatting" );
 	}
 	
 	public function testScenario000052() {
@@ -216,7 +216,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000053() {
-		$this->assertOutput("end2end-000053", Module::PARAGRAPHS, "lists", "images", "formatting" );
+		$this->assertOutput("end2end-000053","paragraphs", "lists", "images", "formatting" );
 	}
 	
 	public function testScenario000054() {
@@ -224,7 +224,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000055() {
-		$this->assertOutput("end2end-000055", Module::PARAGRAPHS, "headings", "lists", "images", "formatting" );
+		$this->assertOutput("end2end-000055","paragraphs", "headings", "lists", "images", "formatting" );
 	}
 	
 	public function testScenario000056() {
@@ -232,7 +232,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000057() {
-		$this->assertOutput("end2end-000057", Module::PARAGRAPHS, "links", "images", "formatting" );
+		$this->assertOutput("end2end-000057","paragraphs", "links", "images", "formatting" );
 	}
 	
 	public function testScenario000058() {
@@ -240,7 +240,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000059() {
-		$this->assertOutput("end2end-000059", Module::PARAGRAPHS, "headings", "links", "images", "formatting" );
+		$this->assertOutput("end2end-000059","paragraphs", "headings", "links", "images", "formatting" );
 	}
 	
 	public function testScenario000060() {
@@ -248,7 +248,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000061() {
-		$this->assertOutput("end2end-000061", Module::PARAGRAPHS, "lists", "links", "images", "formatting" );
+		$this->assertOutput("end2end-000061","paragraphs", "lists", "links", "images", "formatting" );
 	}
 	
 	public function testScenario000062() {
@@ -256,7 +256,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000063() {
-		$this->assertOutput("end2end-000063", Module::PARAGRAPHS, "headings", "lists", "links", "images", "formatting" );
+		$this->assertOutput("end2end-000063","paragraphs", "headings", "lists", "links", "images", "formatting" );
 	}
 	
 	public function testScenario000064() {
@@ -264,7 +264,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000065() {
-		$this->assertOutput("end2end-000065", Module::PARAGRAPHS, "blockquotes" );
+		$this->assertOutput("end2end-000065","paragraphs", "blockquotes" );
 	}
 	
 	public function testScenario000066() {
@@ -272,7 +272,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000067() {
-		$this->assertOutput("end2end-000067", Module::PARAGRAPHS, "headings", "blockquotes" );
+		$this->assertOutput("end2end-000067","paragraphs", "headings", "blockquotes" );
 	}
 	
 	public function testScenario000068() {
@@ -280,7 +280,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000069() {
-		$this->assertOutput("end2end-000069", Module::PARAGRAPHS, "lists", "blockquotes" );
+		$this->assertOutput("end2end-000069","paragraphs", "lists", "blockquotes" );
 	}
 	
 	public function testScenario000070() {
@@ -288,7 +288,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000071() {
-		$this->assertOutput("end2end-000071", Module::PARAGRAPHS, "headings", "lists", "blockquotes" );
+		$this->assertOutput("end2end-000071","paragraphs", "headings", "lists", "blockquotes" );
 	}
 	
 	public function testScenario000072() {
@@ -296,7 +296,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000073() {
-		$this->assertOutput("end2end-000073", Module::PARAGRAPHS, "links", "blockquotes" );
+		$this->assertOutput("end2end-000073","paragraphs", "links", "blockquotes" );
 	}
 	
 	public function testScenario000074() {
@@ -304,7 +304,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000075() {
-		$this->assertOutput("end2end-000075", Module::PARAGRAPHS, "headings", "links", "blockquotes" );
+		$this->assertOutput("end2end-000075","paragraphs", "headings", "links", "blockquotes" );
 	}
 	
 	public function testScenario000076() {
@@ -312,7 +312,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000077() {
-		$this->assertOutput("end2end-000077", Module::PARAGRAPHS, "lists", "links", "blockquotes" );
+		$this->assertOutput("end2end-000077","paragraphs", "lists", "links", "blockquotes" );
 	}
 	
 	public function testScenario000078() {
@@ -320,7 +320,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000079() {
-		$this->assertOutput("end2end-000079", Module::PARAGRAPHS, "headings", "lists", "links", "blockquotes" );
+		$this->assertOutput("end2end-000079","paragraphs", "headings", "lists", "links", "blockquotes" );
 	}
 	
 	public function testScenario000080() {
@@ -328,7 +328,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000081() {
-		$this->assertOutput("end2end-000081", Module::PARAGRAPHS, "images", "blockquotes" );
+		$this->assertOutput("end2end-000081","paragraphs", "images", "blockquotes" );
 	}
 	
 	public function testScenario000082() {
@@ -336,7 +336,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000083() {
-		$this->assertOutput("end2end-000083", Module::PARAGRAPHS, "headings", "images", "blockquotes" );
+		$this->assertOutput("end2end-000083","paragraphs", "headings", "images", "blockquotes" );
 	}
 	
 	public function testScenario000084() {
@@ -344,7 +344,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000085() {
-		$this->assertOutput("end2end-000085", Module::PARAGRAPHS, "lists", "images", "blockquotes" );
+		$this->assertOutput("end2end-000085","paragraphs", "lists", "images", "blockquotes" );
 	}
 	
 	public function testScenario000086() {
@@ -352,7 +352,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000087() {
-		$this->assertOutput("end2end-000087", Module::PARAGRAPHS, "headings", "lists", "images", "blockquotes" );
+		$this->assertOutput("end2end-000087","paragraphs", "headings", "lists", "images", "blockquotes" );
 	}
 	
 	public function testScenario000088() {
@@ -360,7 +360,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000089() {
-		$this->assertOutput("end2end-000089", Module::PARAGRAPHS, "links", "images", "blockquotes" );
+		$this->assertOutput("end2end-000089","paragraphs", "links", "images", "blockquotes" );
 	}
 	
 	public function testScenario000090() {
@@ -368,7 +368,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000091() {
-		$this->assertOutput("end2end-000091", Module::PARAGRAPHS, "headings", "links", "images", "blockquotes" );
+		$this->assertOutput("end2end-000091","paragraphs", "headings", "links", "images", "blockquotes" );
 	}
 	
 	public function testScenario000092() {
@@ -376,7 +376,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000093() {
-		$this->assertOutput("end2end-000093", Module::PARAGRAPHS, "lists", "links", "images", "blockquotes" );
+		$this->assertOutput("end2end-000093","paragraphs", "lists", "links", "images", "blockquotes" );
 	}
 	
 	public function testScenario000094() {
@@ -384,7 +384,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000095() {
-		$this->assertOutput("end2end-000095", Module::PARAGRAPHS, "headings", "lists", "links", "images", "blockquotes" );
+		$this->assertOutput("end2end-000095","paragraphs", "headings", "lists", "links", "images", "blockquotes" );
 	}
 	
 	public function testScenario000096() {
@@ -392,7 +392,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000097() {
-		$this->assertOutput("end2end-000097", Module::PARAGRAPHS, "formatting", "blockquotes" );
+		$this->assertOutput("end2end-000097","paragraphs", "formatting", "blockquotes" );
 	}
 	
 	public function testScenario000098() {
@@ -400,7 +400,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000099() {
-		$this->assertOutput("end2end-000099", Module::PARAGRAPHS, "headings", "formatting", "blockquotes" );
+		$this->assertOutput("end2end-000099","paragraphs", "headings", "formatting", "blockquotes" );
 	}
 	
 	public function testScenario000100() {
@@ -408,7 +408,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000101() {
-		$this->assertOutput("end2end-000101", Module::PARAGRAPHS, "lists", "formatting", "blockquotes" );
+		$this->assertOutput("end2end-000101","paragraphs", "lists", "formatting", "blockquotes" );
 	}
 	
 	public function testScenario000102() {
@@ -416,7 +416,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000103() {
-		$this->assertOutput("end2end-000103", Module::PARAGRAPHS, "headings", "lists", "formatting", "blockquotes" );
+		$this->assertOutput("end2end-000103","paragraphs", "headings", "lists", "formatting", "blockquotes" );
 	}
 	
 	public function testScenario000104() {
@@ -424,7 +424,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000105() {
-		$this->assertOutput("end2end-000105", Module::PARAGRAPHS, "links", "formatting", "blockquotes" );
+		$this->assertOutput("end2end-000105","paragraphs", "links", "formatting", "blockquotes" );
 	}
 	
 	public function testScenario000106() {
@@ -432,7 +432,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000107() {
-		$this->assertOutput("end2end-000107", Module::PARAGRAPHS, "headings", "links", "formatting", "blockquotes" );
+		$this->assertOutput("end2end-000107","paragraphs", "headings", "links", "formatting", "blockquotes" );
 	}
 	
 	public function testScenario000108() {
@@ -440,7 +440,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000109() {
-		$this->assertOutput("end2end-000109", Module::PARAGRAPHS, "lists", "links", "formatting", "blockquotes" );
+		$this->assertOutput("end2end-000109","paragraphs", "lists", "links", "formatting", "blockquotes" );
 	}
 	
 	public function testScenario000110() {
@@ -448,7 +448,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000111() {
-		$this->assertOutput("end2end-000111", Module::PARAGRAPHS, "headings", "lists", "links", "formatting", "blockquotes" );
+		$this->assertOutput("end2end-000111","paragraphs", "headings", "lists", "links", "formatting", "blockquotes" );
 	}
 	
 	public function testScenario000112() {
@@ -456,7 +456,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000113() {
-		$this->assertOutput("end2end-000113", Module::PARAGRAPHS, "images", "formatting", "blockquotes" );
+		$this->assertOutput("end2end-000113","paragraphs", "images", "formatting", "blockquotes" );
 	}
 	
 	public function testScenario000114() {
@@ -464,7 +464,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000115() {
-		$this->assertOutput("end2end-000115", Module::PARAGRAPHS, "headings", "images", "formatting", "blockquotes" );
+		$this->assertOutput("end2end-000115","paragraphs", "headings", "images", "formatting", "blockquotes" );
 	}
 	
 	public function testScenario000116() {
@@ -472,7 +472,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000117() {
-		$this->assertOutput("end2end-000117", Module::PARAGRAPHS, "lists", "images", "formatting", "blockquotes" );
+		$this->assertOutput("end2end-000117","paragraphs", "lists", "images", "formatting", "blockquotes" );
 	}
 	
 	public function testScenario000118() {
@@ -480,7 +480,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000119() {
-		$this->assertOutput("end2end-000119", Module::PARAGRAPHS, "headings", "lists", "images", "formatting", "blockquotes" );
+		$this->assertOutput("end2end-000119","paragraphs", "headings", "lists", "images", "formatting", "blockquotes" );
 	}
 	
 	public function testScenario000120() {
@@ -488,7 +488,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000121() {
-		$this->assertOutput("end2end-000121", Module::PARAGRAPHS, "links", "images", "formatting", "blockquotes" );
+		$this->assertOutput("end2end-000121","paragraphs", "links", "images", "formatting", "blockquotes" );
 	}
 	
 	public function testScenario000122() {
@@ -496,7 +496,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000123() {
-		$this->assertOutput("end2end-000123", Module::PARAGRAPHS, "headings", "links", "images", "formatting", "blockquotes" );
+		$this->assertOutput("end2end-000123","paragraphs", "headings", "links", "images", "formatting", "blockquotes" );
 	}
 	
 	public function testScenario000124() {
@@ -504,7 +504,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000125() {
-		$this->assertOutput("end2end-000125", Module::PARAGRAPHS, "lists", "links", "images", "formatting", "blockquotes" );
+		$this->assertOutput("end2end-000125","paragraphs", "lists", "links", "images", "formatting", "blockquotes" );
 	}
 	
 	public function testScenario000126() {
@@ -512,7 +512,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000127() {
-		$this->assertOutput("end2end-000127", Module::PARAGRAPHS, "headings", "lists", "links", "images", "formatting", "blockquotes" );
+		$this->assertOutput("end2end-000127","paragraphs", "headings", "lists", "links", "images", "formatting", "blockquotes" );
 	}
 	
 	public function testScenario000128() {
@@ -520,7 +520,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000129() {
-		$this->assertOutput("end2end-000129", Module::PARAGRAPHS, "code" );
+		$this->assertOutput("end2end-000129","paragraphs", "code" );
 	}
 	
 	public function testScenario000130() {
@@ -528,7 +528,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000131() {
-		$this->assertOutput("end2end-000131", Module::PARAGRAPHS, "headings", "code" );
+		$this->assertOutput("end2end-000131","paragraphs", "headings", "code" );
 	}
 	
 	public function testScenario000132() {
@@ -536,7 +536,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000133() {
-		$this->assertOutput("end2end-000133", Module::PARAGRAPHS, "lists", "code" );
+		$this->assertOutput("end2end-000133","paragraphs", "lists", "code" );
 	}
 	
 	public function testScenario000134() {
@@ -544,7 +544,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000135() {
-		$this->assertOutput("end2end-000135", Module::PARAGRAPHS, "headings", "lists", "code" );
+		$this->assertOutput("end2end-000135","paragraphs", "headings", "lists", "code" );
 	}
 	
 	public function testScenario000136() {
@@ -552,7 +552,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000137() {
-		$this->assertOutput("end2end-000137", Module::PARAGRAPHS, "links", "code" );
+		$this->assertOutput("end2end-000137","paragraphs", "links", "code" );
 	}
 	
 	public function testScenario000138() {
@@ -560,7 +560,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000139() {
-		$this->assertOutput("end2end-000139", Module::PARAGRAPHS, "headings", "links", "code" );
+		$this->assertOutput("end2end-000139","paragraphs", "headings", "links", "code" );
 	}
 	
 	public function testScenario000140() {
@@ -568,7 +568,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000141() {
-		$this->assertOutput("end2end-000141", Module::PARAGRAPHS, "lists", "links", "code" );
+		$this->assertOutput("end2end-000141","paragraphs", "lists", "links", "code" );
 	}
 	
 	public function testScenario000142() {
@@ -576,7 +576,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000143() {
-		$this->assertOutput("end2end-000143", Module::PARAGRAPHS, "headings", "lists", "links", "code" );
+		$this->assertOutput("end2end-000143","paragraphs", "headings", "lists", "links", "code" );
 	}
 	
 	public function testScenario000144() {
@@ -584,7 +584,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000145() {
-		$this->assertOutput("end2end-000145", Module::PARAGRAPHS, "images", "code" );
+		$this->assertOutput("end2end-000145","paragraphs", "images", "code" );
 	}
 	
 	public function testScenario000146() {
@@ -592,7 +592,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000147() {
-		$this->assertOutput("end2end-000147", Module::PARAGRAPHS, "headings", "images", "code" );
+		$this->assertOutput("end2end-000147","paragraphs", "headings", "images", "code" );
 	}
 	
 	public function testScenario000148() {
@@ -600,7 +600,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000149() {
-		$this->assertOutput("end2end-000149", Module::PARAGRAPHS, "lists", "images", "code" );
+		$this->assertOutput("end2end-000149","paragraphs", "lists", "images", "code" );
 	}
 	
 	public function testScenario000150() {
@@ -608,7 +608,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000151() {
-		$this->assertOutput("end2end-000151", Module::PARAGRAPHS, "headings", "lists", "images", "code" );
+		$this->assertOutput("end2end-000151","paragraphs", "headings", "lists", "images", "code" );
 	}
 	
 	public function testScenario000152() {
@@ -616,7 +616,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000153() {
-		$this->assertOutput("end2end-000153", Module::PARAGRAPHS, "links", "images", "code" );
+		$this->assertOutput("end2end-000153","paragraphs", "links", "images", "code" );
 	}
 	
 	public function testScenario000154() {
@@ -624,7 +624,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000155() {
-		$this->assertOutput("end2end-000155", Module::PARAGRAPHS, "headings", "links", "images", "code" );
+		$this->assertOutput("end2end-000155","paragraphs", "headings", "links", "images", "code" );
 	}
 	
 	public function testScenario000156() {
@@ -632,7 +632,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000157() {
-		$this->assertOutput("end2end-000157", Module::PARAGRAPHS, "lists", "links", "images", "code" );
+		$this->assertOutput("end2end-000157","paragraphs", "lists", "links", "images", "code" );
 	}
 	
 	public function testScenario000158() {
@@ -640,7 +640,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000159() {
-		$this->assertOutput("end2end-000159", Module::PARAGRAPHS, "headings", "lists", "links", "images", "code" );
+		$this->assertOutput("end2end-000159","paragraphs", "headings", "lists", "links", "images", "code" );
 	}
 	
 	public function testScenario000160() {
@@ -648,7 +648,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000161() {
-		$this->assertOutput("end2end-000161", Module::PARAGRAPHS, "formatting", "code" );
+		$this->assertOutput("end2end-000161","paragraphs", "formatting", "code" );
 	}
 	
 	public function testScenario000162() {
@@ -656,7 +656,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000163() {
-		$this->assertOutput("end2end-000163", Module::PARAGRAPHS, "headings", "formatting", "code" );
+		$this->assertOutput("end2end-000163","paragraphs", "headings", "formatting", "code" );
 	}
 	
 	public function testScenario000164() {
@@ -664,7 +664,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000165() {
-		$this->assertOutput("end2end-000165", Module::PARAGRAPHS, "lists", "formatting", "code" );
+		$this->assertOutput("end2end-000165","paragraphs", "lists", "formatting", "code" );
 	}
 	
 	public function testScenario000166() {
@@ -672,7 +672,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000167() {
-		$this->assertOutput("end2end-000167", Module::PARAGRAPHS, "headings", "lists", "formatting", "code" );
+		$this->assertOutput("end2end-000167","paragraphs", "headings", "lists", "formatting", "code" );
 	}
 	
 	public function testScenario000168() {
@@ -680,7 +680,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000169() {
-		$this->assertOutput("end2end-000169", Module::PARAGRAPHS, "links", "formatting", "code" );
+		$this->assertOutput("end2end-000169","paragraphs", "links", "formatting", "code" );
 	}
 	
 	public function testScenario000170() {
@@ -688,7 +688,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000171() {
-		$this->assertOutput("end2end-000171", Module::PARAGRAPHS, "headings", "links", "formatting", "code" );
+		$this->assertOutput("end2end-000171","paragraphs", "headings", "links", "formatting", "code" );
 	}
 	
 	public function testScenario000172() {
@@ -696,7 +696,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000173() {
-		$this->assertOutput("end2end-000173", Module::PARAGRAPHS, "lists", "links", "formatting", "code" );
+		$this->assertOutput("end2end-000173","paragraphs", "lists", "links", "formatting", "code" );
 	}
 	
 	public function testScenario000174() {
@@ -704,7 +704,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000175() {
-		$this->assertOutput("end2end-000175", Module::PARAGRAPHS, "headings", "lists", "links", "formatting", "code" );
+		$this->assertOutput("end2end-000175","paragraphs", "headings", "lists", "links", "formatting", "code" );
 	}
 	
 	public function testScenario000176() {
@@ -712,7 +712,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000177() {
-		$this->assertOutput("end2end-000177", Module::PARAGRAPHS, "images", "formatting", "code" );
+		$this->assertOutput("end2end-000177","paragraphs", "images", "formatting", "code" );
 	}
 	
 	public function testScenario000178() {
@@ -720,7 +720,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000179() {
-		$this->assertOutput("end2end-000179", Module::PARAGRAPHS, "headings", "images", "formatting", "code" );
+		$this->assertOutput("end2end-000179","paragraphs", "headings", "images", "formatting", "code" );
 	}
 	
 	public function testScenario000180() {
@@ -728,7 +728,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000181() {
-		$this->assertOutput("end2end-000181", Module::PARAGRAPHS, "lists", "images", "formatting", "code" );
+		$this->assertOutput("end2end-000181","paragraphs", "lists", "images", "formatting", "code" );
 	}
 	
 	public function testScenario000182() {
@@ -736,7 +736,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000183() {
-		$this->assertOutput("end2end-000183", Module::PARAGRAPHS, "headings", "lists", "images", "formatting", "code" );
+		$this->assertOutput("end2end-000183","paragraphs", "headings", "lists", "images", "formatting", "code" );
 	}
 	
 	public function testScenario000184() {
@@ -744,7 +744,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000185() {
-		$this->assertOutput("end2end-000185", Module::PARAGRAPHS, "links", "images", "formatting", "code" );
+		$this->assertOutput("end2end-000185","paragraphs", "links", "images", "formatting", "code" );
 	}
 	
 	public function testScenario000186() {
@@ -752,7 +752,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000187() {
-		$this->assertOutput("end2end-000187", Module::PARAGRAPHS, "headings", "links", "images", "formatting", "code" );
+		$this->assertOutput("end2end-000187","paragraphs", "headings", "links", "images", "formatting", "code" );
 	}
 	
 	public function testScenario000188() {
@@ -760,7 +760,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000189() {
-		$this->assertOutput("end2end-000189", Module::PARAGRAPHS, "lists", "links", "images", "formatting", "code" );
+		$this->assertOutput("end2end-000189","paragraphs", "lists", "links", "images", "formatting", "code" );
 	}
 	
 	public function testScenario000190() {
@@ -768,7 +768,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000191() {
-		$this->assertOutput("end2end-000191", Module::PARAGRAPHS, "headings", "lists", "links", "images", "formatting", "code" );
+		$this->assertOutput("end2end-000191","paragraphs", "headings", "lists", "links", "images", "formatting", "code" );
 	}
 	
 	public function testScenario000192() {
@@ -776,7 +776,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000193() {
-		$this->assertOutput("end2end-000193", Module::PARAGRAPHS, "blockquotes", "code" );
+		$this->assertOutput("end2end-000193","paragraphs", "blockquotes", "code" );
 	}
 	
 	public function testScenario000194() {
@@ -784,7 +784,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000195() {
-		$this->assertOutput("end2end-000195", Module::PARAGRAPHS, "headings", "blockquotes", "code" );
+		$this->assertOutput("end2end-000195","paragraphs", "headings", "blockquotes", "code" );
 	}
 	
 	public function testScenario000196() {
@@ -792,7 +792,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000197() {
-		$this->assertOutput("end2end-000197", Module::PARAGRAPHS, "lists", "blockquotes", "code" );
+		$this->assertOutput("end2end-000197","paragraphs", "lists", "blockquotes", "code" );
 	}
 	
 	public function testScenario000198() {
@@ -800,7 +800,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000199() {
-		$this->assertOutput("end2end-000199", Module::PARAGRAPHS, "headings", "lists", "blockquotes", "code" );
+		$this->assertOutput("end2end-000199","paragraphs", "headings", "lists", "blockquotes", "code" );
 	}
 	
 	public function testScenario000200() {
@@ -808,7 +808,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000201() {
-		$this->assertOutput("end2end-000201", Module::PARAGRAPHS, "links", "blockquotes", "code" );
+		$this->assertOutput("end2end-000201","paragraphs", "links", "blockquotes", "code" );
 	}
 	
 	public function testScenario000202() {
@@ -816,7 +816,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000203() {
-		$this->assertOutput("end2end-000203", Module::PARAGRAPHS, "headings", "links", "blockquotes", "code" );
+		$this->assertOutput("end2end-000203","paragraphs", "headings", "links", "blockquotes", "code" );
 	}
 	
 	public function testScenario000204() {
@@ -824,7 +824,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000205() {
-		$this->assertOutput("end2end-000205", Module::PARAGRAPHS, "lists", "links", "blockquotes", "code" );
+		$this->assertOutput("end2end-000205","paragraphs", "lists", "links", "blockquotes", "code" );
 	}
 	
 	public function testScenario000206() {
@@ -832,7 +832,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000207() {
-		$this->assertOutput("end2end-000207", Module::PARAGRAPHS, "headings", "lists", "links", "blockquotes", "code" );
+		$this->assertOutput("end2end-000207","paragraphs", "headings", "lists", "links", "blockquotes", "code" );
 	}
 	
 	public function testScenario000208() {
@@ -840,7 +840,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000209() {
-		$this->assertOutput("end2end-000209", Module::PARAGRAPHS, "images", "blockquotes", "code" );
+		$this->assertOutput("end2end-000209","paragraphs", "images", "blockquotes", "code" );
 	}
 	
 	public function testScenario000210() {
@@ -848,7 +848,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000211() {
-		$this->assertOutput("end2end-000211", Module::PARAGRAPHS, "headings", "images", "blockquotes", "code" );
+		$this->assertOutput("end2end-000211","paragraphs", "headings", "images", "blockquotes", "code" );
 	}
 	
 	public function testScenario000212() {
@@ -856,7 +856,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000213() {
-		$this->assertOutput("end2end-000213", Module::PARAGRAPHS, "lists", "images", "blockquotes", "code" );
+		$this->assertOutput("end2end-000213","paragraphs", "lists", "images", "blockquotes", "code" );
 	}
 	
 	public function testScenario000214() {
@@ -864,7 +864,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000215() {
-		$this->assertOutput("end2end-000215", Module::PARAGRAPHS, "headings", "lists", "images", "blockquotes", "code" );
+		$this->assertOutput("end2end-000215","paragraphs", "headings", "lists", "images", "blockquotes", "code" );
 	}
 	
 	public function testScenario000216() {
@@ -872,7 +872,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000217() {
-		$this->assertOutput("end2end-000217", Module::PARAGRAPHS, "links", "images", "blockquotes", "code" );
+		$this->assertOutput("end2end-000217","paragraphs", "links", "images", "blockquotes", "code" );
 	}
 	
 	public function testScenario000218() {
@@ -880,7 +880,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000219() {
-		$this->assertOutput("end2end-000219", Module::PARAGRAPHS, "headings", "links", "images", "blockquotes", "code" );
+		$this->assertOutput("end2end-000219","paragraphs", "headings", "links", "images", "blockquotes", "code" );
 	}
 	
 	public function testScenario000220() {
@@ -888,7 +888,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000221() {
-		$this->assertOutput("end2end-000221", Module::PARAGRAPHS, "lists", "links", "images", "blockquotes", "code" );
+		$this->assertOutput("end2end-000221","paragraphs", "lists", "links", "images", "blockquotes", "code" );
 	}
 	
 	public function testScenario000222() {
@@ -896,7 +896,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000223() {
-		$this->assertOutput("end2end-000223", Module::PARAGRAPHS, "headings", "lists", "links", "images", "blockquotes", "code" );
+		$this->assertOutput("end2end-000223","paragraphs", "headings", "lists", "links", "images", "blockquotes", "code" );
 	}
 	
 	public function testScenario000224() {
@@ -904,7 +904,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000225() {
-		$this->assertOutput("end2end-000225", Module::PARAGRAPHS, "formatting", "blockquotes", "code" );
+		$this->assertOutput("end2end-000225","paragraphs", "formatting", "blockquotes", "code" );
 	}
 	
 	public function testScenario000226() {
@@ -912,7 +912,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000227() {
-		$this->assertOutput("end2end-000227", Module::PARAGRAPHS, "headings", "formatting", "blockquotes", "code" );
+		$this->assertOutput("end2end-000227","paragraphs", "headings", "formatting", "blockquotes", "code" );
 	}
 	
 	public function testScenario000228() {
@@ -920,7 +920,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000229() {
-		$this->assertOutput("end2end-000229", Module::PARAGRAPHS, "lists", "formatting", "blockquotes", "code" );
+		$this->assertOutput("end2end-000229","paragraphs", "lists", "formatting", "blockquotes", "code" );
 	}
 	
 	public function testScenario000230() {
@@ -928,7 +928,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000231() {
-		$this->assertOutput("end2end-000231", Module::PARAGRAPHS, "headings", "lists", "formatting", "blockquotes", "code" );
+		$this->assertOutput("end2end-000231","paragraphs", "headings", "lists", "formatting", "blockquotes", "code" );
 	}
 	
 	public function testScenario000232() {
@@ -936,7 +936,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000233() {
-		$this->assertOutput("end2end-000233", Module::PARAGRAPHS, "links", "formatting", "blockquotes", "code" );
+		$this->assertOutput("end2end-000233","paragraphs", "links", "formatting", "blockquotes", "code" );
 	}
 	
 	public function testScenario000234() {
@@ -944,7 +944,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000235() {
-		$this->assertOutput("end2end-000235", Module::PARAGRAPHS, "headings", "links", "formatting", "blockquotes", "code" );
+		$this->assertOutput("end2end-000235","paragraphs", "headings", "links", "formatting", "blockquotes", "code" );
 	}
 	
 	public function testScenario000236() {
@@ -952,7 +952,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000237() {
-		$this->assertOutput("end2end-000237", Module::PARAGRAPHS, "lists", "links", "formatting", "blockquotes", "code" );
+		$this->assertOutput("end2end-000237","paragraphs", "lists", "links", "formatting", "blockquotes", "code" );
 	}
 	
 	public function testScenario000238() {
@@ -960,7 +960,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000239() {
-		$this->assertOutput("end2end-000239", Module::PARAGRAPHS, "headings", "lists", "links", "formatting", "blockquotes", "code" );
+		$this->assertOutput("end2end-000239","paragraphs", "headings", "lists", "links", "formatting", "blockquotes", "code" );
 	}
 	
 	public function testScenario000240() {
@@ -968,7 +968,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000241() {
-		$this->assertOutput("end2end-000241", Module::PARAGRAPHS, "images", "formatting", "blockquotes", "code" );
+		$this->assertOutput("end2end-000241","paragraphs", "images", "formatting", "blockquotes", "code" );
 	}
 	
 	public function testScenario000242() {
@@ -976,7 +976,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000243() {
-		$this->assertOutput("end2end-000243", Module::PARAGRAPHS, "headings", "images", "formatting", "blockquotes", "code" );
+		$this->assertOutput("end2end-000243","paragraphs", "headings", "images", "formatting", "blockquotes", "code" );
 	}
 	
 	public function testScenario000244() {
@@ -984,7 +984,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000245() {
-		$this->assertOutput("end2end-000245", Module::PARAGRAPHS, "lists", "images", "formatting", "blockquotes", "code" );
+		$this->assertOutput("end2end-000245","paragraphs", "lists", "images", "formatting", "blockquotes", "code" );
 	}
 	
 	public function testScenario000246() {
@@ -992,7 +992,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000247() {
-		$this->assertOutput("end2end-000247", Module::PARAGRAPHS, "headings", "lists", "images", "formatting", "blockquotes", "code" );
+		$this->assertOutput("end2end-000247","paragraphs", "headings", "lists", "images", "formatting", "blockquotes", "code" );
 	}
 	
 	public function testScenario000248() {
@@ -1000,7 +1000,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000249() {
-		$this->assertOutput("end2end-000249", Module::PARAGRAPHS, "links", "images", "formatting", "blockquotes", "code" );
+		$this->assertOutput("end2end-000249","paragraphs", "links", "images", "formatting", "blockquotes", "code" );
 	}
 	
 	public function testScenario000250() {
@@ -1008,7 +1008,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000251() {
-		$this->assertOutput("end2end-000251", Module::PARAGRAPHS, "headings", "links", "images", "formatting", "blockquotes", "code" );
+		$this->assertOutput("end2end-000251","paragraphs", "headings", "links", "images", "formatting", "blockquotes", "code" );
 	}
 	
 	public function testScenario000252() {
@@ -1016,7 +1016,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000253() {
-		$this->assertOutput("end2end-000253", Module::PARAGRAPHS, "lists", "links", "images", "formatting", "blockquotes", "code" );
+		$this->assertOutput("end2end-000253","paragraphs", "lists", "links", "images", "formatting", "blockquotes", "code" );
 	}
 	
 	public function testScenario000254() {
@@ -1024,7 +1024,7 @@ class EndToEndTest extends \PHPUnit_Framework_TestCase {
 	}
 	
 	public function testScenario000255() {
-		$this->assertOutput("end2end-000255", Module::PARAGRAPHS, "headings", "lists", "links", "images", "formatting", "blockquotes", "code" );
+		$this->assertOutput("end2end-000255","paragraphs", "headings", "lists", "links", "images", "formatting", "blockquotes", "code" );
 	}
 	
 	private function assertOutput($file) {
