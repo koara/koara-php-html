@@ -10,7 +10,7 @@
 The AST is created by the [core koara parser](https://github.com/koara/koara-php).
 
 ## Getting started
-- Download [ZIP file](https://github.com/koara/koara-php-html/archive/0.12.0.zip)
+- Download [ZIP file](https://github.com/koara/koara-php-html/archive/0.13.0.zip)
 - Composer
 
   ``` bash
@@ -37,7 +37,11 @@ echo $renderer->getOutput();
 
 ## Configuration
 You can configure the Renderer:
-
+-  **$renderer.setHardWrap($hardWrap)**  
+   Default: `false`
+   
+   Specify if newlines should be hard-wrapped (return-based linebreaks) by default.
+   
 -  **$renderer.setPartial(boolean partial)**  
    Default:	`true`
    
