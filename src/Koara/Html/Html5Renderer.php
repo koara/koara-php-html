@@ -30,6 +30,11 @@ class Html5Renderer implements Renderer
      * @var bool
      */
     private $partial = true;
+    
+    /**
+     * @var bool
+     */
+    private $hardWrap = false;
 
     public function visitDocument($node)
     {
@@ -198,10 +203,13 @@ class Html5Renderer implements Renderer
         );
     }
 
-    public function visitLineBreak($node)
+	public function visitLineBreak($node)
     {
-        $this->out .= "<br>\n";
-        $this->indent();
+    	if($this->hardWrap || $node->isExplicit()) {
+    		$this->out .= "<br>";
+    	}
+        $this->out .= "\n";
+        $this->out .= $this->indent();
         $node->childrenAccept($this);
     }
 
@@ -222,6 +230,15 @@ class Html5Renderer implements Renderer
         }
     }
 
+    public function setPartial($partial)
+    {
+    	$this->partial = $partial;
+    }
+    
+    public function setHardWrap($hardWrap) {
+    	$this->hardWrap = $hardWrap;
+    }
+    
     public function getOutput()
     {
     	if(!$this->partial) {
@@ -234,11 +251,6 @@ class Html5Renderer implements Renderer
     		return $wrapper;
     	}
         return trim($this->out);
-    }
-    
-    public function setPartial($partial)
-    {
-    	$this->partial = $partial;
     }
     
 }
