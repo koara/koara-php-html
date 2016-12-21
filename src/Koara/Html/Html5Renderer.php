@@ -5,6 +5,7 @@ namespace Koara\Html;
 use Koara\Ast\BlockElement;
 use Koara\Ast\ListItem;
 use Koara\Ast\Paragraph;
+use Koara\Ast\Text;
 
 use Koara\Renderer;
 
@@ -36,6 +37,11 @@ class Html5Renderer implements Renderer
      */
     private $hardWrap = false;
 
+    /**
+     * @var bool
+     */
+    private $headingIds = false;
+
     public function visitDocument($node)
     {
         $node->childrenAccept($this);
@@ -44,7 +50,17 @@ class Html5Renderer implements Renderer
     public function visitHeading($node)
     {
     	$this->indent();
-        $this->out .= '<h'.$node->getValue().'>';
+        $this->out .= '<h'.$node->getValue();
+        if($this->headingIds) {
+            $id = '';
+            foreach($node->getChildren() as $key => $n) {
+                if($n instanceof Text) {
+                    $id .= str_replace(' ', '_', strtolower($n->getValue()));
+                }
+            }
+            $this->out .= " id=\"".$id."\"";
+        }
+        $this->out .= '>';
         $node->childrenAccept($this);
         $this->out .= '</h'.$node->getValue().">\n";
         if (!$node->isNested()) {
@@ -235,10 +251,16 @@ class Html5Renderer implements Renderer
     	$this->partial = $partial;
     }
     
-    public function setHardWrap($hardWrap) {
+    public function setHardWrap($hardWrap)
+    {
     	$this->hardWrap = $hardWrap;
     }
-    
+
+    public function setHeadingIds($headingIds)
+    {
+        $this->headingIds = $headingIds;
+    }
+
     public function getOutput()
     {
     	if(!$this->partial) {
